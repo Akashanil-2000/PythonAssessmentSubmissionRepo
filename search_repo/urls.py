@@ -1,9 +1,10 @@
-from django.urls import path,include
+from django.urls import path
 from . import views
-from django.conf import settings
-from django.conf.urls.static import static
 
-urlpatterns=[
+urlpatterns = [
+    # Home page URL
     path('', views.home, name='home'),
+
+    # Search page URL
     path('search/', views.search, name='search'),
 ]
